@@ -25,7 +25,6 @@ export class OperationHistoryComponent extends React.Component<Props, {}> {
     nodeFetch('http://localhost:5000/operations')
     .then(res => res.json())
     .then(json => {
-      console.log(json);
       const seriallizedOperations: { id: string, date: string, amount: number }[] = json;
       const deserializedOperations = seriallizedOperations
         .map(operation => ({
@@ -33,8 +32,7 @@ export class OperationHistoryComponent extends React.Component<Props, {}> {
           date: new Date(operation.date)
         }));
       this.props.onInitOperations(deserializedOperations);
-    })
-    .then(result => console.log(result));
+    });
   }
 
   render() {
