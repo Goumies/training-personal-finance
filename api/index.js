@@ -10,17 +10,17 @@ app.get("/operations", function(_, res) {
     {
       id: uuid(),
       date: new Date(2019, 5, 12),
-      amount: 100
+      amount: 1000
     },
     {
       id: uuid(),
       date: new Date(2019, 5, 13),
-      amount: -40
+      amount: -400
     },
     {
       id: uuid(),
       date: new Date(2019, 10, 21),
-      amount: -5
+      amount: -50
     }
   ];
   res.send(operations);

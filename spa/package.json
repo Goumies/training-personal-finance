@@ -40,7 +40,9 @@
     "typescript": "^3.2.2"
   },
   "dependencies": {
+    "@types/node-fetch": "^2.3.6",
     "moment": "^2.24.0",
+    "node-fetch": "^2.6.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "uuid": "^3.3.2"
