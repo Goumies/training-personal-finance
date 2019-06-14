@@ -22,7 +22,7 @@ export class OperationHistoryComponent extends React.Component<Props, {}> {
   }
 
   componentDidMount() {
-    nodeFetch('http://localhost:5000/operations', { method: 'GET' })
+    nodeFetch('http://localhost:5000/operations')
     .then(res => res.json())
     .then(json => {
       console.log(json);
